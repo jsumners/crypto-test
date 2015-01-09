@@ -78,7 +78,7 @@ public class CryptoService {
     Cipher cipher = cipherOptional.get();
     byte[] encryptedBytes = null;
     try {
-      encryptedBytes = cipher.doFinal();
+      encryptedBytes = cipher.doFinal(data.getBytes());
     } catch (IllegalBlockSizeException e) {
       log.error("Bad encryption block size: `{}`", e.getMessage());
       log.debug(e.toString());
