@@ -26,8 +26,8 @@ public class CryptoServiceTest {
   public void testDecrypt() throws Exception {
     CryptoService cryptoService = new CryptoService(this.key);
     Optional<EncryptedData> encryptedDataOptional = EncryptedData.fromJSON(
-      "{\"iv\": \"sPhdvGugVph5yBa4X0WWTA==\"," +
-      "\"data\": \"xC3K06bhR9jYYEe6HwkOcg==\"}"
+      "{\"iv\": \"VSadcPgqXYoegXchXrej2Q==\"," +
+      "\"data\": \"66qbexIcG0VlGHw5E2JHcA==\"}"
     );
 
     assertTrue(encryptedDataOptional.isPresent());
